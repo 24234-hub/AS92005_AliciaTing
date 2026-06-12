@@ -3,15 +3,47 @@ body {
   min-height: 100vh;
  }
 
-.topbar {
+ul.topbar {
   background-color: #5170ff;
-  display: block;
-  padding: 0.7em;
-  border-bottom: 10em, #004aad;
-  font-size: 1.5em;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 1em 0.7em 0.7em;
+  margin: -1em;
+  border-bottom: 0.3em solid #004aad;
+  font-size: 1.25em;
+  font-family: Gagalin, Impact, Georgia;
 }
 
-a {
+.topbar li {
+  display: inline;
+}
+
+.topbar a {
   color: #ffdc26;
+  padding: 0.15em;
+}
+
+h1.main_heading {
+  color: #db9000;
+  text-align: center;
+  font-family: Gagalin, Impact, Georgia;
+  font-size: 2.5em;
+}
+
+.main_info {
+    background-color: #c9eaff;
+    border: 0.1em solid #ffdc26;
+    color: #9f7006;
+    margin: 1em;
+    padding: 0.3em;
+    text-align: left;
+}
+
+.main_info p {
+    padding: inherit;
+}
+
+#secondary_hook {
+    text-align: center;
+    padding: inherit;
 }
