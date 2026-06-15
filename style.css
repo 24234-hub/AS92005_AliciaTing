@@ -1,9 +1,12 @@
 body {
   background-image: linear-gradient(135deg, #cdffd8, #94b9ff);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
  }
 
 ul.topbar {
+  position: fized;
   background-color: #5170ff;
   display: flex;
   justify-content: center;
@@ -21,6 +24,10 @@ ul.topbar {
 .topbar a {
   color: #ffdc26;
   padding: 0.15em;
+}
+
+.main_content {
+    flex: 1;
 }
 
 h1.main_heading {
@@ -46,4 +53,14 @@ h1.main_heading {
 #secondary_hook {
     text-align: center;
     padding: inherit;
+}
+
+.footer {
+    margin: -1em;
+    background-color: #004aad;
+    border-top: 0.3em solid #5170ff;
+    padding: 1em 0.7em 0.7em;
+    position: relative;
+    top: 1.5em;
+    width: 100%;
 }
