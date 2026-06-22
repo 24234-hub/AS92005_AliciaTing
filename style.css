@@ -3,21 +3,21 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 0;
  }
 
-ul.topbar {
+.topbar {
   background-color: #5170ff;
   display: flex;
   justify-content: center;
-  padding: 1em 0.7em 0.7em;
-  margin: -1em; /* margin -1em is used, as margin 0 didn't remove the margin to the left, right, and bottom of the section*/
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  padding: 0.7em;
+  margin-top: -1em; /* margin -1em is used, as margin 0 doesn't remove the margin to the top of the section */
   border-bottom: 0.3em solid #004aad;
   font-size: 1.25em;
   font-family: Gagalin, Impact, Georgia;
-}
-
-.topbar li {
-  display: inline;
 }
 
 .topbar a {
@@ -29,11 +29,12 @@ ul.topbar {
     flex: 1; /* This takes the remaining space, which pushes the footer down */
 }
 
-.main-heading {
+h1 {
   color: #db9000;
   text-align: center;
   font-family: Gagalin, Impact, Georgia;
   font-size: 2.5em;
+  margin-top: 1em; /* The margin here is to add space between the topbar and the title */
 }
 
 .main-image{
@@ -48,8 +49,9 @@ ul.topbar {
   border: 0.1em solid #ffdc26;
   color: #9f7006;
   margin: 1em;
-  padding: 0.4em;
+  padding: 0.5em;
   text-align: left;
+  overflow: hidden;
 }
 
 h2 {
@@ -70,12 +72,14 @@ h2 {
 
 .left-images {
   float: left;
+  overflow: hidden;
   width: 10em;
   height: auto;
 }
 
 .footer {
-  margin: -1em; /* margin -1em is used, as margin 0 didn't remove the margin to the left, right, and bottom of the section*/
+  display: flex;
+  overflow: hidden;
   background-color: #004aad;
   border-top: 0.3em solid #5170ff;
   padding: 1em 0.7em 0.7em;
