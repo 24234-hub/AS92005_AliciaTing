@@ -6,12 +6,11 @@ body {
  }
 
 ul.topbar {
-  position: fized;
   background-color: #5170ff;
   display: flex;
   justify-content: center;
   padding: 1em 0.7em 0.7em;
-  margin: -1em;
+  margin: -1em; /* margin -1em is used, as margin 0 didn't remove the margin to the left, right, and bottom of the section*/
   border-bottom: 0.3em solid #004aad;
   font-size: 1.25em;
   font-family: Gagalin, Impact, Georgia;
@@ -26,41 +25,61 @@ ul.topbar {
   padding: 0.15em;
 }
 
-.main_content {
-    flex: 1;
+.content {
+    flex: 1; /* This takes the remaining space, which pushes the footer down */
 }
 
-h1.main_heading {
+.main-heading {
   color: #db9000;
   text-align: center;
   font-family: Gagalin, Impact, Georgia;
   font-size: 2.5em;
 }
 
-.main_info {
-    background-color: #c9eaff;
-    border: 0.1em solid #ffdc26;
-    color: #9f7006;
-    margin: 1em;
-    padding: 0.3em;
-    text-align: left;
+.main-image{
+  display: block;
+  margin: auto;
+  width: 20em;
+  height: auto;
 }
 
-.main_info p {
-    padding: inherit;
+.info {
+  background-color: #c9eaff;
+  border: 0.1em solid #ffdc26;
+  color: #9f7006;
+  margin: 1em;
+  padding: 0.4em;
+  text-align: left;
 }
 
-#secondary_hook {
-    text-align: center;
-    padding: inherit;
+h2 {
+  padding: inherit;
+  color: #b89e15;
+  font-family: Gagalin, Impact, Georgia;
+}
+
+#hook {
+  text-align: center;
+}
+
+.right-images {
+  float: right;
+  width: 10em;
+  height: auto;
+}
+
+.left-images {
+  float: left;
+  width: 10em;
+  height: auto;
 }
 
 .footer {
-    margin: -1em;
-    background-color: #004aad;
-    border-top: 0.3em solid #5170ff;
-    padding: 1em 0.7em 0.7em;
-    position: relative;
-    top: 1.5em;
-    width: 100%;
+  margin: -1em; /* margin -1em is used, as margin 0 didn't remove the margin to the left, right, and bottom of the section*/
+  background-color: #004aad;
+  border-top: 0.3em solid #5170ff;
+  padding: 1em 0.7em 0.7em;
+  position: relative;
+  top: 1.5em;
+  width: 100%;
 }
