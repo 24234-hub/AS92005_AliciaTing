@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  font-size: 20px;
  }
 
 .topbar {
@@ -14,7 +15,6 @@ body {
   top: 0;
   overflow: hidden;
   padding: 0.7em;
-  margin-top: -1em; /* margin -1em is used, as margin 0 doesn't remove the margin to the top of the section */
   border-bottom: 0.3em solid #004aad;
   font-size: 1.25em;
   font-family: Gagalin, Impact, Georgia;
@@ -40,8 +40,8 @@ h1 {
 .main-image{
   display: block;
   margin: auto;
-  width: 20em;
-  height: auto;
+  width: auto;
+  height: 12em;
 }
 
 .info {
@@ -51,11 +51,11 @@ h1 {
   margin: 1em;
   padding: 0.5em;
   text-align: left;
-  overflow: hidden;
+  overflow: hidden; /* this line stops images from overflowing over the edge of the main box*/
 }
 
 h2 {
-  padding: inherit;
+  margin: 0em;
   color: #b89e15;
   font-family: Gagalin, Impact, Georgia;
 }
@@ -64,10 +64,23 @@ h2 {
   text-align: center;
 }
 
+#right-heading {
+  clear: right;
+}
+
+.extra-info {
+  text-align: center;
+}
+
+#paragraph-clear {
+  clear: left;
+}
+
 .right-images {
   float: right;
   width: 10em;
   height: auto;
+  padding-left: 0.3em; /* padding to the left is specified here, since that's the only side the padding is needed */
 }
 
 .left-images {
@@ -75,15 +88,14 @@ h2 {
   overflow: hidden;
   width: 10em;
   height: auto;
+  padding-right: 0.4em; /* padding to the right is specified here, since that's the only side the padding is needed */
 }
 
 .footer {
-  display: flex;
   overflow: hidden;
   background-color: #004aad;
   border-top: 0.3em solid #5170ff;
   padding: 1em 0.7em 0.7em;
   position: relative;
   top: 1.5em;
-  width: 100%;
 }
