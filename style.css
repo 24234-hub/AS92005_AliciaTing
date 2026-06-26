@@ -91,9 +91,10 @@ h2 {
   padding-right: 0.4em; /* padding to the right is specified here, since that's the only side the padding is needed */
 }
 
-.footer {
+footer {
   overflow: hidden;
   background-color: #004aad;
+  color: #ffdc26;
   border-top: 0.3em solid #5170ff;
   padding: 1em 0.7em 0.7em;
   position: relative;
