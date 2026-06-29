@@ -5,7 +5,8 @@ body {
   flex-direction: column;
   margin: 0;
   font-size: 20px;
- }
+  font-family: Georgia;
+}
 
 .topbar {
   background-color: #5170ff;
@@ -37,11 +38,11 @@ h1 {
   margin-top: 1em; /* The margin here is to add space between the topbar and the title */
 }
 
-.main-image{
+.main-image {
   display: block;
   margin: auto;
-  width: auto;
-  height: 12em;
+  width: 18em;
+  height: auto;
 }
 
 .info {
@@ -52,6 +53,10 @@ h1 {
   padding: 0.5em;
   text-align: left;
   overflow: hidden; /* this line stops images from overflowing over the edge of the main box*/
+}
+
+.info ul {
+  overflow: hidden; /* stops bullet points from overlapping with floated images*/
 }
 
 h2 {
@@ -99,4 +104,8 @@ footer {
   padding: 1em 0.7em 0.7em;
   position: relative;
   top: 1.5em;
+}
+
+footer a {
+ color: inherit;
 }
