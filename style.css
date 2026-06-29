@@ -28,6 +28,7 @@ body {
 
 .content {
     flex: 1; /* This takes the remaining space, which pushes the footer down */
+    font-size: 1.2em;
 }
 
 h1 {
@@ -35,13 +36,14 @@ h1 {
   text-align: center;
   font-family: Gagalin, Impact, Georgia;
   font-size: 2.5em;
-  margin-top: 1em; /* The margin here is to add space between the topbar and the title */
+  margin-top: 0.5em; /* The margin here is to add space between the topbar and the title */
 }
 
 .main-image {
   display: block;
   margin: auto;
-  width: 18em;
+  width: 30em;
+  max-width: 90%;
   height: auto;
 }
 
@@ -50,13 +52,13 @@ h1 {
   border: 0.1em solid #ffdc26;
   color: #9f7006;
   margin: 1em;
-  padding: 0.5em;
+  padding: 0.75em;
   text-align: left;
-  overflow: hidden; /* this line stops images from overflowing over the edge of the main box*/
+  overflow: hidden; /* this line stops images from overflowing over the edge of the main box */
 }
 
 .info ul {
-  overflow: hidden; /* stops bullet points from overlapping with floated images*/
+  overflow: hidden; /* stops bullet points from overlapping with floated images, since the overflow hidden in info itself doesn't seem to stop this */
 }
 
 h2 {
@@ -65,8 +67,9 @@ h2 {
   font-family: Gagalin, Impact, Georgia;
 }
 
-#hook {
+.hook {
   text-align: center;
+  margin: 0.1em;
 }
 
 #right-heading {
@@ -78,22 +81,24 @@ h2 {
 }
 
 #paragraph-clear {
-  clear: left;
+  clear: left; /* this specific paragraph had issues with being squashed between the two images to its left and right, so the clear here is to prevent that */
 }
 
 .right-images {
   float: right;
-  width: 10em;
+  width: 20em;
+  max-width: 100%;
   height: auto;
-  padding-left: 0.3em; /* padding to the left is specified here, since that's the only side the padding is needed */
+  margin-left: 0.5em; /* margin is added here to only the left side, so that the text doesn't press right up to the image */
 }
 
 .left-images {
   float: left;
   overflow: hidden;
-  width: 10em;
+  width: 20em;
+  max-width: 100%;
   height: auto;
-  padding-right: 0.4em; /* padding to the right is specified here, since that's the only side the padding is needed */
+  margin-right: 0.5em; /* margin is added here to only the right side, so that the text doesn't press right up to the image */
 }
 
 footer {
