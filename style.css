@@ -16,7 +16,7 @@ body {
   overflow: hidden;
   padding: 0.7em;
   border-bottom: 0.3em solid #004aad;
-  font: 1.4em Impact, Georgia;
+  font: 1.5em Impact, Georgia;
 }
 
 .topbar a {
@@ -70,7 +70,7 @@ h2 {
 }
 
 #right-heading {
-  clear: right;
+  clear:right; /* this prevents the heading and body paragraphs from being stacked against the image to the right */
 }
 
 .extra-info {
