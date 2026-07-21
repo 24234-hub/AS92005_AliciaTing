@@ -7,6 +7,14 @@ body {
   font: 20px Georgia;
 }
 
+a {
+  color: #ffdc26;
+}
+
+a:hover {
+  color: #db9000;
+}
+
 .topbar {
   background-color: #5170ff;
   display: flex;
@@ -20,7 +28,6 @@ body {
 }
 
 .topbar a {
-  color: #ffdc26;
   padding: 0.15em;
 }
 
