@@ -80,7 +80,7 @@ h2 {
   clear:right; /* this prevents the heading and body paragraphs from being stacked against the image to the right */
 }
 
-.extra-info {
+#extra-info {
   text-align: center;
 }
 
