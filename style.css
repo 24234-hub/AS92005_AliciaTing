@@ -76,15 +76,11 @@ h2 {
   margin: 0.3em;
 }
 
-#right-heading {
-  clear:right; /* this prevents the heading and body paragraphs from being stacked against the image to the right */
-}
-
 #extra-info {
   text-align: center;
 }
 
-#paragraph-clear {
+#overview-paragraph {
   clear: left; /* this specific paragraph had issues with being squashed between the two images to its left and right, so the clear here is to prevent that */
 }
 
