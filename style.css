@@ -7,6 +7,10 @@ body {
   font: 20px Georgia, serif;
 }
 
+::selection{
+  background: #ffdc26; /* finish later*/
+}
+
 a {
   color: #ffdc26;
 }
