@@ -7,38 +7,42 @@ body {
   font: 20px Georgia, serif;
 }
 
-::selection{
-  background: #a9caff; /* finish later*/
+/* The selector color was changed to fit the website's design better  */
+::selection {
+  background: #a9caff;
   color: #a27309;
 }
 
+/* the natural color for links was hard to read on my website, so it was shifted to a more readable color here */
 a {
   color: #ffdc26;
 }
 
+/* a:hover was changed to make it easier for a user to know that they are hovering over a link */
 a:hover {
   color: #db9000;
 }
 
 .topbar {
   background-color: #5170ff;
-  display: flex;
+  display: flex; /* Using flex boxes helped to arrange the links in the top bar better */
   justify-content: center;
   position: sticky;
-  top: 0;
   overflow: hidden;
+  top: 0;
   padding: 0.7em;
   border-bottom: 0.3em solid #004aad;
-  font: 1.2em Impact, Georgia, serif;
 }
 
+/* The padding of the topbar was stated to make the links further apart form each other */
 .topbar a {
+  font: 1.2em Impact, Georgia, serif;
   padding: 0.15em;
 }
 
 .content {
-    flex: 1; /* This takes the remaining space, which pushes the footer down */
-    font-size: 1.2em;
+  flex: 1; /* This takes the remaining space, which pushes the footer down */
+  font-size: 1.2em; /* This helps make the contents information larger without affecting anything else outside of it */
 }
 
 h1 {
@@ -49,7 +53,7 @@ h1 {
 }
 
 .main-image {
-  display: block;
+  display: block; /* Displaying as a block here is necessary to center the image */
   margin: auto;
   width: 30em;
   max-width: 90%; /* max width is noted here to prevent images from going off the screen on smaller screen sizes */
@@ -71,7 +75,7 @@ h1 {
 }
 
 h2 {
-  margin: 0em;
+  margin: 0em; /* The h2 tag appeared to have an inbuilt top margin, which I didn't like, so this is here to remove that margin  */
   color: #b89e15;
   font-family: Impact, Georgia, serif;
 }
@@ -85,10 +89,6 @@ h2 {
   text-align: center;
 }
 
-#overview-paragraph {
-  clear: left; /* this specific paragraph had issues with being squashed between the two images to its left and right, so the clear here is to prevent that */
-}
-
 .right-images {
   float: right;
   width: 20em;
@@ -99,7 +99,6 @@ h2 {
 
 .left-images {
   float: left;
-  overflow: hidden;
   width: 20em;
   max-width: 100%; /* max width is noted here to prevent images from going off the screen on smaller screen sizes */
   height: auto;
@@ -107,13 +106,10 @@ h2 {
 }
 
 footer {
-  overflow: hidden;
   background-color: #004aad;
   color: #ffdc26;
   border-top: 0.3em solid #5170ff;
   padding: 1em 0.7em 0.7em;
-  position: relative;
-  top: 1.5em;
 }
 
 footer a {
@@ -122,8 +118,9 @@ footer a {
 
 .logo {
   float: right;
-  filter: invert(100%);
+  filter: invert(100%); /* This inversion here is to make the logo more visible */
   width: 10em;
+  max-width: 50%; /* max width is noted here to prevent images from going off the screen on smaller screen sizes */
+  height: auto;
   margin: 1em;
-  max-width: 50%;
 }
