@@ -8,7 +8,8 @@ body {
 }
 
 ::selection{
-  background: #ffdc26; /* finish later*/
+  background: #a9caff; /* finish later*/
+  color: #a27309;
 }
 
 a {
@@ -57,8 +58,8 @@ h1 {
 
 .info {
   background-color: #c9eaff;
-  border: 0.1em solid #ffdc26;
   color: #9f7006;
+  border: 0.1em solid #ffdc26;
   margin: 1em;
   padding: 0.75em;
   text-align: left;
